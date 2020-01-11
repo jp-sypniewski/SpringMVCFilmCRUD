@@ -14,10 +14,8 @@
   <c:choose>
     <c:when test="${! empty film}">
       <ul>
-        <li>${film}</li>
-<%--         <li>${film.name}</li>
-        <li>${film.capital}</li>
-        <li>${film.capitalPopulation}</li> --%>
+        <li>${film.id}</li>
+        <li>${film.title}</li>
       </ul>
     </c:when>
     <c:otherwise>
