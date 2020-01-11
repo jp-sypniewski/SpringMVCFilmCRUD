@@ -32,6 +32,11 @@
     <input type="hidden" name="film" value= "${film.id }" /> 
     <input type="submit" value="Edit Film Data" />
   </form>
+  
+  <form action="deleteFilm.do" method="POST">
+    <input type="hidden" name="film" value= "${film.id }" /> 
+    <input type="submit" value="Delete Film ONLY works on user-added films" />
+  </form>
       
       <!-- <a href= "editFilm.do">Edit Film </a> -->
     </c:when>

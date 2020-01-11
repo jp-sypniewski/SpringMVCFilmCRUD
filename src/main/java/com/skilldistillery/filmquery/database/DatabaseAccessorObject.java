@@ -125,7 +125,7 @@ public class DatabaseAccessorObject implements DatabaseAccessor {
 			pstmt = conn.prepareStatement(sql);
 			pstmt.setInt(1, film.getId());
 			pstmt.executeUpdate();
-
+			conn.commit();
 			pstmt.close();
 			conn.close();
 
