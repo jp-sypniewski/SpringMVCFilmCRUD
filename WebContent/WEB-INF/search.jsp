@@ -6,14 +6,24 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Film Query Site</title>
+<title>Film Search Results</title>
 </head>
 <body>
 
-<form action="search.do" method="GET">
-  <input type="text" name="filmId">
-  <input type="submit" value="Submit">
-</form>
+
+  <c:choose>
+    <c:when test="${! empty film}">
+      <ul>
+        <li>${film}</li>
+<%--         <li>${film.name}</li>
+        <li>${film.capital}</li>
+        <li>${film.capitalPopulation}</li> --%>
+      </ul>
+    </c:when>
+    <c:otherwise>
+      <p>No film found</p>
+    </c:otherwise>
+  </c:choose>
 
 
 
