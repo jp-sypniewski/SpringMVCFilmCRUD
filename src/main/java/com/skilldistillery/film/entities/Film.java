@@ -18,6 +18,10 @@ public class Film {
 	private List<Actor> actors;
 	private String category;
 
+	public Film() {
+		
+	}
+	
 	@Override
 	public String toString() {
 		return "Film \n[id=" + id + ", \ntitle=" + title + ", \ndescription=" + description + ", \nreleaseYear="
