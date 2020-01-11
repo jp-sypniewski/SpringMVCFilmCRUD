@@ -54,5 +54,15 @@ public class FilmController {
 		mv.setViewName("WEB-INF/edit.jsp");
 		return mv;
 	}
+	
+	@RequestMapping(path="updateFilm.do", method= RequestMethod.POST)
+	public ModelAndView updateFilm(@ModelAttribute("film") Film film, RedirectAttributes redir) {
+		ModelAndView mv = new ModelAndView();
+		redir.addFlashAttribute("film", film);
+		dao.saveFilm(film);
+		mv.addObject("film", dao.findFilmById(film.getId()) );
+		mv.setViewName("WEB-INF/search.jsp");
+		return mv;
+	}
 
 }

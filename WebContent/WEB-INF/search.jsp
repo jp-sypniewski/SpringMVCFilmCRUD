@@ -13,10 +13,21 @@
 
   <c:choose>
     <c:when test="${! empty film}">
+    
       <ul>
         <li>${film.id}</li>
         <li>${film.title}</li>
+        <li>${film.description}</li>
+        <li>${film.releaseYear}</li>
+        <li>${film.languageId}</li>
+        <li>${film.rentalDuration}</li>
+        <li>${film.rentalRate}</li>
+        <li>${film.length}</li>
+        <li>${film.replacementCost}</li>
+        <li>${film.rating}</li>
+        <li>${film.specialFeatures}</li>
       </ul>
+      
         <form action="editFilm.do" method="GET">
     <input type="hidden" name="film" value= "${film.id }" /> 
     <input type="submit" value="Edit Film Data" />

@@ -6,7 +6,7 @@
 </head>
 <body>
 <h3>EditFilm</h3>
-  <form action="editFilm.do" method="POST">
+  <form action="updateFilm.do" method="POST">
   
     Title    
     <input type="text" name="title" value= "${film.title}"/> 
@@ -29,7 +29,7 @@
     specialFeatures
     <input type="text" name="specialFeatures" value= "${film.specialFeatures}"/> 
         
-    <input type="submit" value="Get Film Data" />
+    <input type="submit" value="Update Film Data" />
 
 	</form>
 
