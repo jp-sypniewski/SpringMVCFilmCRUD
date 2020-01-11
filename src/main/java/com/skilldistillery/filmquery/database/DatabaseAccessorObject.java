@@ -186,11 +186,12 @@ public class DatabaseAccessorObject implements DatabaseAccessor {
 				String sqlInsertActorFilm = "insert into film_actor" + " (film_id, actor_id)" + " values (?, ?);";
 
 				pstmt = conn.prepareStatement(sqlInsertActorFilm);
-
+				if (film.getActors()!= null) {
 				for (Actor actor : film.getActors()) {
 					pstmt.setInt(1, film.getId());
 					pstmt.setInt(1, actor.getId());
 					pstmt.executeUpdate();
+				}
 				}
 				
 				conn.commit();
@@ -261,6 +262,9 @@ public class DatabaseAccessorObject implements DatabaseAccessor {
 
 			if (rs.next()) {
 				film = new Film();
+
+				film.setId((rs.getInt(1)));
+
 				film.setTitle(rs.getString(2));
 				film.setDescription(rs.getString(3));
 				film.setReleaseYear(rs.getInt(4));
