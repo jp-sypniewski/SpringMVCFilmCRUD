@@ -186,11 +186,12 @@ public class DatabaseAccessorObject implements DatabaseAccessor {
 				String sqlInsertActorFilm = "insert into film_actor" + " (film_id, actor_id)" + " values (?, ?);";
 
 				pstmt = conn.prepareStatement(sqlInsertActorFilm);
-
+				if (film.getActors()!= null) {
 				for (Actor actor : film.getActors()) {
 					pstmt.setInt(1, film.getId());
 					pstmt.setInt(1, actor.getId());
 					pstmt.executeUpdate();
+				}
 				}
 				
 				conn.commit();

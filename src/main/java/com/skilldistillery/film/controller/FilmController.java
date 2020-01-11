@@ -49,18 +49,17 @@ public class FilmController {
 	public ModelAndView editFilm(@RequestParam("film") String s) {
 		ModelAndView mv = new ModelAndView();
 		int idInt = Integer.parseInt(s);
-		Film film = dao.findFilmById(idInt);
+		Film film = dao.newFindFilmById(idInt);
 		mv.addObject("film", film);
 		mv.setViewName("WEB-INF/edit.jsp");
 		return mv;
 	}
 	
 	@RequestMapping(path="updateFilm.do", method= RequestMethod.POST)
-	public ModelAndView updateFilm(@ModelAttribute("film") Film film, RedirectAttributes redir) {
+	public ModelAndView updateFilm(@ModelAttribute("film") Film film) {
 		ModelAndView mv = new ModelAndView();
-		redir.addFlashAttribute("film", film);
 		dao.saveFilm(film);
-		mv.addObject("film", dao.findFilmById(film.getId()) );
+		mv.addObject("film", dao.newFindFilmById(film.getId()) );
 		mv.setViewName("WEB-INF/search.jsp");
 		return mv;
 	}
