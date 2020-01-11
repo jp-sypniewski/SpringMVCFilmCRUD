@@ -29,6 +29,10 @@ public class DatabaseAccessorObject implements DatabaseAccessor {
 		}
 	}
 	
+	public DatabaseAccessorObject() {
+		
+	}
+	
 	@Override
 	public Film createFilm(Film film) {
 		String sql = "insert into film"
