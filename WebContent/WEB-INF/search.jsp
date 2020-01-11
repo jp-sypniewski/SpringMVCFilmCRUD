@@ -17,6 +17,12 @@
         <li>${film.id}</li>
         <li>${film.title}</li>
       </ul>
+        <form action="editFilm.do" method="GET">
+    <input type="hidden" name="film" value= "${film.id }" /> 
+    <input type="submit" value="Edit Film Data" />
+  </form>
+      
+      <!-- <a href= "editFilm.do">Edit Film </a> -->
     </c:when>
     <c:otherwise>
       <p>No film found</p>

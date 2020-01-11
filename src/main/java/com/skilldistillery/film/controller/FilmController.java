@@ -45,5 +45,14 @@ public class FilmController {
 		mv.setViewName("WEB-INF/search.jsp");
 		return mv;
 	}
+	@RequestMapping(path="editFilm.do", params = "film", method= RequestMethod.GET)
+	public ModelAndView editFilm(@RequestParam("film") String s) {
+		ModelAndView mv = new ModelAndView();
+		int idInt = Integer.parseInt(s);
+		Film film = dao.findFilmById(idInt);
+		mv.addObject("film", film);
+		mv.setViewName("WEB-INF/edit.jsp");
+		return mv;
+	}
 
 }
