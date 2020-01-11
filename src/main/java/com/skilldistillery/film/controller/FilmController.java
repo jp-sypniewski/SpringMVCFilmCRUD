@@ -30,7 +30,7 @@ public class FilmController {
 	public ModelAndView showFilmById(@RequestParam("id") String s, RedirectAttributes redir) {
 		ModelAndView mv = new ModelAndView();
 		int idInt = Integer.parseInt(s);
-		Film film = dao.findFilmById(idInt);
+		Film film = dao.newFindFilmById(idInt);
 		mv.addObject("film", film);
 		redir.addFlashAttribute("film", film);
 		mv.setViewName("WEB-INF/search.jsp");

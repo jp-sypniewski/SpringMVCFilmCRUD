@@ -260,6 +260,8 @@ public class DatabaseAccessorObject implements DatabaseAccessor {
 			ResultSet rs = pstmt.executeQuery();
 
 			if (rs.next()) {
+				film = new Film();
+				film.setId((rs.getInt(1)));
 				film.setTitle(rs.getString(2));
 				film.setDescription(rs.getString(3));
 				film.setReleaseYear(rs.getInt(4));
