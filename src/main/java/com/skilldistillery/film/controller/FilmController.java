@@ -10,7 +10,7 @@ import com.skilldistillery.filmquery.database.DatabaseAccessorObject;
 public class FilmController {
 	
 	@Autowired
-	DatabaseAccessorObject dao = new DatabaseAccessorObject();
+	private DatabaseAccessorObject dao;
 	
 	@RequestMapping("search.do")
 	public String returnToSearch() {
