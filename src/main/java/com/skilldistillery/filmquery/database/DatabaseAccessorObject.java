@@ -220,7 +220,8 @@ public class DatabaseAccessorObject implements DatabaseAccessor {
 				+ " rating, special_features, category.name as film_category" + " from film"
 				+ " join language on film.language_id = language.id"
 				+ " join film_category on film.id = film_category.film_id"
-				+ " join category on film_category.category_id = category.id" + " where film.id = ?";
+				+ " join category on film_category.category_id = category.id" 
+				+ " where film.id = ?";
 
 		try {
 			Connection conn = DriverManager.getConnection(URL, user, pw);
@@ -242,9 +243,43 @@ public class DatabaseAccessorObject implements DatabaseAccessor {
 
 		} catch (SQLException e) {
 			e.printStackTrace();
-			;
 		}
 
+		return film;
+	}
+	
+	public Film newFindFilmById(int filmId) {
+		Film film = null;
+		String sql = "select * from film where id = ?;";
+		
+		
+		try {
+			Connection conn = DriverManager.getConnection(URL, user, pw);
+			PreparedStatement pstmt = conn.prepareStatement(sql);
+			pstmt.setInt(1, filmId);
+			ResultSet rs = pstmt.executeQuery();
+
+			if (rs.next()) {
+				film.setTitle(rs.getString(2));
+				film.setDescription(rs.getString(3));
+				film.setReleaseYear(rs.getInt(4));
+				film.setLanguageId(rs.getInt(5));
+				film.setRentalDuration(rs.getInt(6));
+				film.setRentalRate(rs.getInt(7));
+				film.setLength(rs.getInt(8));
+				film.setReplacementCost(rs.getDouble(9));
+				film.setRating(rs.getString(10));
+				film.setSpecialFeatures(rs.getString(11));
+			}
+
+			rs.close();
+			pstmt.close();
+			conn.close();
+
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		
 		return film;
 	}
 
