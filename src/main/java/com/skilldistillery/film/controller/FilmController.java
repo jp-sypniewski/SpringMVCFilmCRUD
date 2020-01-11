@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.skilldistillery.film.entities.Film;
 import com.skilldistillery.filmquery.database.DatabaseAccessorObject;
@@ -26,17 +27,20 @@ public class FilmController {
 	}
 
 	@RequestMapping(path="GetFilmById.do", params="id")
-	public ModelAndView showFilmById(@RequestParam("id") String s) {
+	public ModelAndView showFilmById(@RequestParam("id") String s, RedirectAttributes redir) {
 		ModelAndView mv = new ModelAndView();
 		int idInt = Integer.parseInt(s);
-		mv.addObject("film", dao.findFilmById(idInt));
+		Film film = dao.findFilmById(idInt);
+		mv.addObject("film", film);
+		redir.addFlashAttribute("film", film);
 		mv.setViewName("WEB-INF/search.jsp");
 		return mv;
 	}
 	
 	@RequestMapping(path="addFilm.do", method= RequestMethod.POST)
-	public ModelAndView addFilm(@ModelAttribute("film") Film film) {
+	public ModelAndView addFilm(@ModelAttribute("film") Film film, RedirectAttributes redir) {
 		ModelAndView mv = new ModelAndView();
+		redir.addFlashAttribute("film", film);
 		mv.addObject("film", dao.createFilm(film));
 		mv.setViewName("WEB-INF/search.jsp");
 		return mv;
