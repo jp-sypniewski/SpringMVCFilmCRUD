@@ -26,6 +26,20 @@
         <li>${film.replacementCost}</li>
         <li>${film.rating}</li>
         <li>${film.specialFeatures}</li>
+        
+        <li><c:choose>
+        	<c:when test ="${! empty film.actors }">
+        		<ul><c:forEach var="actor" items="${film.actors}">
+        			<li>actor.firstName actor.lastName</li>
+        		</c:forEach></ul>
+        	</c:when>
+        	<c:otherwise>
+        		No actors found
+        	</c:otherwise>
+        </c:choose></li>
+        
+        
+        
       </ul>
       
         <form action="editFilm.do" method="GET">
