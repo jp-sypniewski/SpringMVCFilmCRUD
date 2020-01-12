@@ -20,10 +20,7 @@
         <c:forEach var="film" items="${films}">
         <li>
       <a href="search.jsp?film${film}">${film.title }</a>
-        </li>
-    </c:forEach>
-
-      </ul>
+      <br>
       
         <form action="editFilm.do" method="GET">
     <input type="hidden" name="film" value= "${film.id }" /> 
@@ -34,6 +31,11 @@
     <input type="hidden" name="film" value= "${film.id }" /> 
     <input type="submit" value="Delete Film ONLY works on user-added films" />
   </form>
+        </li>
+    </c:forEach>
+
+      </ul>
+      
       
       <!-- <a href= "editFilm.do">Edit Film </a> -->
     </c:when>

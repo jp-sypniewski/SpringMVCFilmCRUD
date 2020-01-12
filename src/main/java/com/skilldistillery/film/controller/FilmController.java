@@ -36,6 +36,16 @@ public class FilmController {
 		mv.setViewName("WEB-INF/search.jsp");
 		return mv;
 	}
+	@RequestMapping(path="GetFilmByKeyword.do.do", params="id")
+	public ModelAndView showFilmByKeyword(@RequestParam("id") String s, RedirectAttributes redir) {
+		ModelAndView mv = new ModelAndView();
+		int idInt = Integer.parseInt(s);
+		Film film = dao.newFindFilmById(idInt);
+		mv.addObject("film", film);
+		redir.addFlashAttribute("film", film);
+		mv.setViewName("WEB-INF/search.jsp");
+		return mv;
+	}
 	
 	@RequestMapping(path="addFilm.do", method= RequestMethod.POST)
 	public ModelAndView addFilm(@ModelAttribute("film") Film film, RedirectAttributes redir) {
