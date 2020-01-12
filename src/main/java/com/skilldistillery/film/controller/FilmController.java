@@ -1,5 +1,7 @@
 package com.skilldistillery.film.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -36,13 +38,11 @@ public class FilmController {
 		mv.setViewName("WEB-INF/search.jsp");
 		return mv;
 	}
-	@RequestMapping(path="GetFilmByKeyword.do.do", params="id")
-	public ModelAndView showFilmByKeyword(@RequestParam("id") String s, RedirectAttributes redir) {
+	@RequestMapping(path="GetFilmByKeyword.do.do", params="keyword")
+	public ModelAndView showFilmByKeyword(@RequestParam("keyword") String s) {
 		ModelAndView mv = new ModelAndView();
-		int idInt = Integer.parseInt(s);
-		Film film = dao.newFindFilmById(idInt);
-		mv.addObject("film", film);
-		redir.addFlashAttribute("film", film);
+		List<Film> films = dao.findFilmsBySearch(s);
+		mv.addObject("films", films);
 		mv.setViewName("WEB-INF/search.jsp");
 		return mv;
 	}
