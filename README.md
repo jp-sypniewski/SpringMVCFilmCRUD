@@ -21,5 +21,8 @@
 ![Alt Text](https://secure.meetupstatic.com/photos/event/c/0/a/e/600_460069326.jpeg)
 
 ## Challenges
+* It was tough to get this whole thing done without being physically in the same place. We have done most of our work so far either by ourselves or in a pair-programming setting. This being the first project where we are collaborating remotely presented a fair amount of challenges, namely trying to balance who is working on what and when. We had multiple times of finding ourselves with merge conflicts that we had to resolve before continuing. While this obviously wasn't impossible, it did slow us down at times.
+
+* Another challenge faced was being on unequal footing. Having not been very strong in some of the required concepts, more time than what was desired was spent with JP explaining to Skyler a fair amount of the base ideas. This had the result of slowing overall progress down more than what either have been accustomed to. In the end, the project was successful and no significant issues arose, but it was absolutely a learning point for both. 
 
 ## Lessons Learned
