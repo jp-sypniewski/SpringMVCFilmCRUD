@@ -38,7 +38,14 @@
         	</c:otherwise>
         </c:choose></li>
         
-        
+        <li><c:choose>
+        	<c:when test ="${! empty film.category }">
+        		film.category
+        	</c:when>
+        	<c:otherwise>
+        		No category found
+        	</c:otherwise>
+        </c:choose></li>
         
       </ul>
       
