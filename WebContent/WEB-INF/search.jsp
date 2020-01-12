@@ -29,8 +29,9 @@
         
         <li><c:choose>
         	<c:when test ="${! empty film.actors }">
+        		Actors:
         		<ul><c:forEach var="actor" items="${film.actors}">
-        			<li>actor.firstName actor.lastName</li>
+        			<li>${actor.firstName } ${actor.lastName }</li>
         		</c:forEach></ul>
         	</c:when>
         	<c:otherwise>
@@ -40,7 +41,7 @@
         
         <li><c:choose>
         	<c:when test ="${! empty film.category }">
-        		film.category
+        		${film.category }
         	</c:when>
         	<c:otherwise>
         		No category found
