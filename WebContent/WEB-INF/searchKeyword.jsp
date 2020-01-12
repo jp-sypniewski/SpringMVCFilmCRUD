@@ -19,9 +19,13 @@
       <ul>
         <c:forEach var="film" items="${films}">
         <li>
-      <a href="search.jsp?id=${film.id}">${film.title }</a>
+      ${film.title }
       <br>
       
+        <form action="GetFilmById.do" method="GET">
+    <input type="hidden" name="id" value= "${film.id }" /> 
+    <input type="submit" value="Show All Film Data" />
+  </form>
         <form action="editFilm.do" method="GET">
     <input type="hidden" name="film" value= "${film.id }" /> 
     <input type="submit" value="Edit Film Data" />
