@@ -29,11 +29,14 @@
 ![Alt Text](http://www.pngall.com/wp-content/uploads/2016/05/Java-PNG-180x180.png)
 ![Alt Text](https://itemis.ch/wp-content/uploads/sites/23/2015/06/eclipse5-180x180.jpg)
 ![Alt Text](https://media.trustradius.com/product-logos/GV/6S/3COGMZ775P74-180x180.PNG)
+![Alt Text](https://media.trustradius.com/product-logos/HK/19/A1STBOL3HJCR-180x180.JPEG)
 <br>
 ![Alt Text](http://ifixit.ie/wp-content/uploads/2015/02/Apple-logo-180x180.png)
 ![Alt Text](http://web.corballis.ie/technology_logos/mysql-logo-180x180.png)
 ![Alt Text](https://careers.google.com/jobs/dist/img/meta/careers_apple-touch-icon-180x180.a4632facecb104f3a686.png)
+![Alt Text](http://github.com/apple-touch-icon-180x180.png)
 <br>
+![Alt Text](http://www.icons101.com/icon_ico/id_83114/MAMP.ico)
 ![Alt Text](https://secure.meetupstatic.com/photos/event/c/0/a/e/600_460069326.jpeg)
 
 ## Challenges
