@@ -7,26 +7,37 @@
 <body>
 <h3>AddFilm</h3>
   <form action="addFilm.do" method="POST">
-    Title    
-    <input type="text" name="title"/> 
-    Description
-    <input type="text" name="description"/> 
-    Release Year
-    <input type="text" name="releaseYear"/> 
-    languageId
-    <input type="text" name="languageId"/> 
-    rentalDuration
-    <input type="text" name="rentalDuration"/> 
-    rentalRate
-    <input type="text" name="rentalRate"/> 
-    length
-    <input type="text" name="length"/> 
-    replacementCost
-    <input type="text" name="replacementCost"/> 
-    rating
-    <input type="text" name="rating"/> 
-    specialFeatures
-    <input type="text" name="specialFeatures"/> 
+    Title:  
+    <input type="text" name="title"/><br> 
+    Description:
+    <input type="text" name="description"/> <br> 
+    Release Year:
+    <input type="text" name="releaseYear"/> <br> 
+    Language ID:
+    <input type="number" name="languageId" min="1" max="6" value="1"/> <br> 
+    Rental Duration:
+    <input type="text" name="rentalDuration"/> <br> 
+    Rental Rate:
+    <input type="text" name="rentalRate"/> <br> 
+    Length:
+    <input type="text" name="length"/> <br> 
+    Replacement Cost:
+    <input type="text" name="replacementCost"/> <br> 
+    Rating:
+    <select name="rating">
+    	<option value="G">G</option>
+    	<option value="PG">PG</option>
+    	<option value="PG13">PG13</option>
+    	<option value="R">R</option>
+    	<option value="NC17">NC17</option>
+    </select><br> 
+    Special Features:
+    <select name="specialFeatures">
+        <option value="Trailers">Trailers</option>
+    	<option value="Commentaries">Commentaries</option>
+    	<option value="Deleted Scenes">Deleted Scenes</option>
+    	<option value="Behind the Scenes">Behind the Scenes</option>
+    </select><br> 
         
     <input type="submit" value="Get Film Data" />
 

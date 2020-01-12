@@ -39,7 +39,7 @@ public class FilmController {
 		} else {
 			film = dao.newFindFilmById(idInt);
 		}
-
+		mv.addObject("created", true);
 		mv.addObject("film", film);
 		mv.setViewName("WEB-INF/search.jsp");
 		return mv;
@@ -73,7 +73,13 @@ public class FilmController {
 	@RequestMapping(path = "addFilm.do", method = RequestMethod.POST)
 	public ModelAndView addFilm(@ModelAttribute("film") Film film) {
 		ModelAndView mv = new ModelAndView();
-		mv.addObject("film", dao.createFilm(film));
+		boolean created = false;
+		Film filmInDB = dao.createFilm(film);
+		if (filmInDB != null) {
+			created = true;
+		}
+		mv.addObject("created", created);
+		mv.addObject("film", filmInDB);
 		mv.setViewName("WEB-INF/search.jsp");
 		return mv;
 	}

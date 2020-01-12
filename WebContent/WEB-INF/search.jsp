@@ -9,7 +9,13 @@
 <title>Film Search Results</title>
 </head>
 <body>
-
+	<c:choose>
+	
+	<c:when test="${! created }">
+		Film not created
+	
+	</c:when>
+	<c:otherwise>
 
   <c:choose>
     <c:when test="${! empty film}">
@@ -66,7 +72,8 @@
       <p>No film found</p>
     </c:otherwise>
   </c:choose>
-
+  </c:otherwise>
+</c:choose>
 
 
 
