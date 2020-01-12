@@ -15,17 +15,17 @@
     <c:when test="${! empty film}">
     
       <ul>
-        <li>${film.id}</li>
-        <li>${film.title}</li>
-        <li>${film.description}</li>
-        <li>${film.releaseYear}</li>
-        <li>${film.languageId}</li>
-        <li>${film.rentalDuration}</li>
-        <li>${film.rentalRate}</li>
-        <li>${film.length}</li>
-        <li>${film.replacementCost}</li>
-        <li>${film.rating}</li>
-        <li>${film.specialFeatures}</li>
+        <li>ID: ${film.id}</li>
+        <li>Title: ${film.title}</li>
+        <li>Description: ${film.description}</li>
+        <li>Release Year: ${film.releaseYear}</li>
+        <li>Language ID: ${film.languageId}</li>
+        <li>Rental Duration: ${film.rentalDuration}</li>
+        <li>Rental Rate: ${film.rentalRate}</li>
+        <li>Length: ${film.length}</li>
+        <li>Replacement Cost: ${film.replacementCost}</li>
+        <li>Rating: ${film.rating}</li>
+        <li>Special Features: ${film.specialFeatures}</li>
         
         <li><c:choose>
         	<c:when test ="${! empty film.actors }">
@@ -41,7 +41,7 @@
         
         <li><c:choose>
         	<c:when test ="${! empty film.category }">
-        		${film.category }
+        		Category: ${film.category }
         	</c:when>
         	<c:otherwise>
         		No category found
