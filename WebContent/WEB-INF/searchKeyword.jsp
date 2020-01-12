@@ -19,7 +19,7 @@
       <ul>
         <c:forEach var="film" items="${films}">
         <li>
-      <a href="search.jsp?film${film}">${film.title }</a>
+      <a href="search.jsp?id=${film.id}">${film.title }</a>
       <br>
       
         <form action="editFilm.do" method="GET">

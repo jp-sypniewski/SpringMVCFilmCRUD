@@ -41,7 +41,7 @@ public class FilmController {
 	
 	// displays list of films from a keyword search
 	
-	@RequestMapping(path="GetFilmByKeyword.do.do", params="keyword")
+	@RequestMapping(path="GetFilmByKeyword.do", params="keyword")
 	public ModelAndView showFilmByKeyword(@RequestParam("keyword") String s) {
 		ModelAndView mv = new ModelAndView();
 		List<Film> films = dao.findFilmsBySearch(s);
