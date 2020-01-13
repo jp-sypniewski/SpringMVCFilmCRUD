@@ -71,7 +71,7 @@
 
 					<form action="deleteFilm.do" method="POST">
 						<input type="hidden" name="film" value="${film.id }" /> <input
-							type="submit" value="Delete Film [-- ONLY works on user-added films! --]" />
+							type="submit" value="Delete Film [ ONLY works on user-added films! ]" />
 					</form>
 
 					<!-- <a href= "editFilm.do">Edit Film </a> -->
@@ -85,7 +85,7 @@
 		</c:otherwise>
 	</c:choose>
 
-	<a id="returnhome" style="color: yellow; text-decoration: none; font-size:140%"
+	<a id="returnhome" style="color: yellow; text-decoration: none; font-size:250%"
 		href="index.html">&#128073 &#127968</a>
 </body>
 </html>

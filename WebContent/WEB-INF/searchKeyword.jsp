@@ -5,10 +5,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" type="css" href="mvcfilmsite.css" />
 <meta charset="UTF-8">
 <title>Film Search Results</title>
 </head>
-<body>
+<body id="searchjsp" style= "text-align:center">
 
 
   <c:choose>
@@ -16,39 +17,43 @@
     
     
     
-      <ul>
+      <ul id= " idkeywordjsp" style= "list-style:none; padding:3cm" >
         <c:forEach var="film" items="${films}">
-        <li>
+        <li style="font-size:175%">
       ${film.title }
-      <br>
+      <br/><br/>
       
         <form action="GetFilmById.do" method="GET">
     <input type="hidden" name="id" value= "${film.id }" /> 
     <input type="submit" value="Show All Film Data" />
-  </form>
+        </form>
+        <br/>
+        
         <form action="editFilm.do" method="GET">
     <input type="hidden" name="film" value= "${film.id }" /> 
     <input type="submit" value="Edit Film Data" />
-  </form>
+         </form>
+         <br/>
   
-  <form action="deleteFilm.do" method="POST">
+        <form action="deleteFilm.do" method="POST">
     <input type="hidden" name="film" value= "${film.id }" /> 
-    <input type="submit" value="Delete Film ONLY works on user-added films" />
-  </form>
+<!--     <input type="submit" value="Delete Film ONLY works on user-added films" />
+ -->    </form>
+ <br/>
+ 
         </li>
+        
     </c:forEach>
-
       </ul>
-      
       </c:when>
     <c:otherwise>
-      <p>No films found</p>
+      <p id="nonefound" style= "font-size: 400%">No films found</p>
     </c:otherwise>
   </c:choose>
 
+  	<a style= "text-align:center; font-size: 250%; text-decoration: none; text-shadow: 2px 2px 4px #000000;" href="index.html">&#128073 &#127968</a>
   <br><br><br><br>
 
-  <a href="index.html">Return Home</a>
 
 
 

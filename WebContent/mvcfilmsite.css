@@ -16,21 +16,34 @@ h1 {
 	text-shadow: 2px 2px 4px #000000;
 	font-family: sans-serif;
 	font-weight: bolder;
-	text-decoration-style:solid;
+	text-decoration: none;
+}
+#id:hover{
+	opacity: 0.4;
+	text-decoration: underline;
 }
 
 #key {
 	color: white;
 	text-shadow: 2px 2px 4px #000000;
 	font-family: sans-serif;
-	text-decoration-style:solid;
-}
+	text-decoration: none;
 
+}
+#key:hover{
+	opacity: 0.4;
+	text-decoration: underline;
+}
 #add {
 	color: white;
 	text-shadow: 2px 2px 4px #000000;
 	font-family: sans-serif;
-	text-decoration-style: solid;
+	text-decoration: none;
+
+}
+#add:hover{
+	opacity: 0.4;
+	text-decoration: underline;
 }
 
 #addform {
@@ -87,4 +100,28 @@ h1 {
 	text-align: center;
 	color: white;
 	font-family: sans-serif;
+}
+#keyword{
+	text-shadow: 2px 2px 4px #000000;
+	padding-top: 4cm;
+	text-align: center;
+	color: white;
+	font-family: sans-serif;
+}
+#searchjsp{
+	text-shadow: 2px 2px 4px #000000;
+	color: white;
+	font-family: sans-serif;
+}
+#nonefound{
+	padding-top: 7cm;
+	text-shadow: 2px 2px 4px #000000;
+	font-size: 100;
+	font-family: sans-serif;
+	font-weight: bolder;
+	color: white;
+	text-align: center;
+}
+#idkeywordjsp{
+	padding-top: 3cm;
 }

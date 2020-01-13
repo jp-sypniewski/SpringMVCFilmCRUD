@@ -1,16 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" type="css" href="mvcfilmsite.css" />
 <meta charset="UTF-8">
-<title>Search by ID</title>
+
+<title>Search by Keyword</title>
 </head>
-<body>
-<h3>Films</h3>
-  <form action="GetFilmByKeyword.do" method="GET">
+
+<body id="keyword"  style= "text-align: center; color:white; ">
+
+<h3 style= "font-size: 300%; ">Films</h3>
+
+  <form action="GetFilmByKeyword.do" method="GET" style="font-size:300%; text-shadow: 2px 2px 4px #000000;">
     Search by Keyword:
     <input type="text" name="keyword"/> 
     <input type="submit" value="Get Film Data" />
   </form>
+  <br/>
+  
 
 </body>
+  	<a style= "font-size: 250%; text-decoration: none; text-shadow: 2px 2px 4px #000000;" href="index.html">&#128073 &#127968</a>
 </html>
