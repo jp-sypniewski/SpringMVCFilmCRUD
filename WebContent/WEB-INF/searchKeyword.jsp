@@ -37,8 +37,7 @@
   
         <form action="deleteFilm.do" method="POST">
     <input type="hidden" name="film" value= "${film.id }" /> 
-<!--     <input type="submit" value="Delete Film ONLY works on user-added films" />
- -->    </form>
+     <input type="submit" value="Delete Film ONLY works on user-added films" />   </form>
  <br/>
  
         </li>
