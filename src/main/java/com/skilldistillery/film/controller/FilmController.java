@@ -102,8 +102,11 @@ public class FilmController {
 	public ModelAndView deleteFilm(@ModelAttribute("film") String s) {
 		ModelAndView mv = new ModelAndView();
 		int idInt = Integer.parseInt(s);
-		Film film = dao.newFindFilmById(idInt);
-		boolean deleted = dao.deleteFilm(film);
+		boolean deleted = false;
+		if (idInt > 1000) {
+			Film film = dao.newFindFilmById(idInt);
+			deleted = dao.deleteFilm(film);
+		}
 		mv.addObject("deleted", deleted);
 		mv.setViewName("WEB-INF/deleted.jsp");
 		return mv;
