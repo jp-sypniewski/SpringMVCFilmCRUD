@@ -38,7 +38,7 @@
   
   <br><br><br><br>
 
-  <a style= "font-size: 130%; color: yellow; text-decoration: none" href="index.html">Return Home</a>
+  <a style= "font-size: 130%; color: yellow; text-decoration: none" href="index.html">&#128073 &#127968</a>
 
 </body>
 
