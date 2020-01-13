@@ -32,6 +32,10 @@
     <input type="submit" value="Update Film Data" />
 
   </form>
+  
+  <br><br><br><br>
+
+  <a href="index.html">Return Home</a>
 
 </body>
 

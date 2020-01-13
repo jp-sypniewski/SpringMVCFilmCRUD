@@ -40,15 +40,15 @@
 
       </ul>
       
-      
-      <!-- <a href= "editFilm.do">Edit Film </a> -->
-    </c:when>
+      </c:when>
     <c:otherwise>
       <p>No films found</p>
     </c:otherwise>
   </c:choose>
 
+  <br><br><br><br>
 
+  <a href="index.html">Return Home</a>
 
 
 
