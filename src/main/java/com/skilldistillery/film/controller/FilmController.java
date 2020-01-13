@@ -90,6 +90,7 @@ public class FilmController {
 	public ModelAndView updateFilm(@ModelAttribute("film") Film film) {
 		ModelAndView mv = new ModelAndView();
 		dao.saveFilm(film);
+		mv.addObject("created", true);
 		mv.addObject("film", dao.newFindFilmById(film.getId()));
 		mv.setViewName("WEB-INF/search.jsp");
 		return mv;

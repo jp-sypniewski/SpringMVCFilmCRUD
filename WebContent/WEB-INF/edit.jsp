@@ -7,7 +7,7 @@
 <body>
 <h3>EditFilm</h3>
   <form action="updateFilm.do" method="POST">
-  <input type="hidden" name="id" value= "${film.id}"/>
+  	<input type="hidden" name="id" value= "${film.id}"/>
     Title:
     <input type="text" name="title" value= "${film.title}"/> <br>
     Description:
@@ -31,7 +31,7 @@
         
     <input type="submit" value="Update Film Data" />
 
-	</form>
+  </form>
 
 </body>
 
