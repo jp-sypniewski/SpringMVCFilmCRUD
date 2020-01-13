@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" type="css" href="mvcfilmsite.css" />
 <meta charset="UTF-8">
-<title>Add Film</title>
+<title >Add Film </title>
 </head>
-<body>
-<h3>Add Film</h3>
-  <form action="addFilm.do" method="POST">
+
+<body class= "addpage">
+<h3 style= "font-size: 250%; ">Add Film</h3>
+  <form style= "font-size: 190%" id="addform" action="addFilm.do" method="POST">
     Title:  
     <input type="text" name="title"/><br> 
     
@@ -32,7 +34,7 @@
     <input type="text" name="replacementCost"/> <br> 
     
     Rating:
-    <select name="rating">
+    <select id="select" name="rating">
     	<option value="G">G</option>
     	<option value="PG">PG</option>
     	<option value="PG13">PG13</option>
@@ -54,8 +56,8 @@
 	
 	
 	<br><br><br><br>
-
-	<a href="index.html">Return Home</a>
+	
+	<a style= "font-size: 130%; color: yellow; text-decoration: none; text-shadow: 2px 2px 4px #000000;" href="index.html">Return Home</a>
 
 </body>
 

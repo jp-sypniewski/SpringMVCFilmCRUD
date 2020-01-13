@@ -1,34 +1,70 @@
-
-body{
-	background-image:url(https://cdn.wallpapersafari.com/49/64/UnqzQV.jpg);
+body {
+	background-image: url(http://getwallpapers.com/wallpaper/full/b/5/6/450195.jpg);
 }
-div{
-	border-style: solid;
-	border-color: white;
-	border: 30px;
-}
-h1{
 
+h1 {
+	padding-top: 1cm;
+	font-size: 900;
 	text-align: center;
-	font-size: 400;
 	font-style: italic;
 	font-weight: 900;
 	text-decoration: none;
 }
-#id:link{
-	color: white;
-	font-family:sans-serif;
-	font-weight:bolder;
-	text-decoration-style: double;
 
+#id {
+	color: white;
+	text-shadow: 2px 2px 4px #000000;
+	font-family: sans-serif;
+	font-weight: bolder;
+	text-decoration-style:solid;
 }
-#key{
-color: white;
-font-family:sans-serif;
-text-decoration-style: double;
+
+#key {
+	color: white;
+	text-shadow: 2px 2px 4px #000000;
+	font-family: sans-serif;
+	text-decoration-style:solid;
 }
-#add{
-color: white;
-font-family:sans-serif;
-text-decoration-style: double;
+
+#add {
+	color: white;
+	text-shadow: 2px 2px 4px #000000;
+	font-family: sans-serif;
+	text-decoration-style: solid;
+}
+
+#addform {
+	color: white;
+	font-family: sans-serif;
+}
+
+.addpage{
+	text-shadow: 2px 2px 4px #000000;
+	padding-top: 3cm;
+	text-align: center;
+	color: white;
+	font-family: sans-serif;
+}
+#filminfo{
+	padding-top: 2cm;
+  font-size: 30;
+	color:white;
+}
+.deleted{
+	padding-top: 9cm;
+	text-shadow: 2px 2px 4px #000000;
+	font-family: sans-serif;
+	font-size: 100;
+	font-weight: bolder;
+	color: white;
+	text-align: center;
+	background-image: url(https://img-new.cgtrader.com/items/834717/f5fa2fcae3/trash-can-4k-pbr-game-ready-3d-model-low-poly-obj-3ds-fbx-tga.jpg);
+}
+.editpage{
+	text-shadow: 2px 2px 4px #000000;
+	padding-top: 3cm;
+	text-align: center;
+	color: white;
+	font-family: sans-serif;
+
 }

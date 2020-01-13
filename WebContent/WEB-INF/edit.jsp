@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" type="css" href="mvcfilmsite.css" />
 <meta charset="UTF-8">
 <title>Edit Film</title>
 </head>
-<body>
-<h3>EditFilm</h3>
-  <form action="updateFilm.do" method="POST">
+
+<body class= "editpage">
+<h3 style= "font-size: 250%; ">EditFilm</h3>
+  <form style= "font-size: 190%" action="updateFilm.do" method="POST">
   	<input type="hidden" name="id" value= "${film.id}"/>
     Title:
     <input type="text" name="title" value= "${film.title}"/> <br>
@@ -36,7 +38,7 @@
   
   <br><br><br><br>
 
-  <a href="index.html">Return Home</a>
+  <a style= "font-size: 130%; color: yellow; text-decoration: none" href="index.html">Return Home</a>
 
 </body>
 

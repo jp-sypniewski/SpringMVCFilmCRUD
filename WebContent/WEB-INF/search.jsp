@@ -3,12 +3,14 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
     
 <!DOCTYPE html>
-<html>
+<html >
 <head>
+<link rel="stylesheet" type="css" href="mvcfilmsite.css" />
 <meta charset="UTF-8">
 <title>Film Search Results</title>
 </head>
-<body>
+
+<body style= "font-size:150%; color:white; text-shadow: 2px 2px 4px #000000;">
 	<c:choose>
 	
 	<c:when test="${! created }">
@@ -21,7 +23,8 @@
     <c:when test="${! empty film}">
     
       <ul>
-        <li>ID: ${film.id}</li>
+      
+        <li style= "color:yellow; text-align:center; opacity:0.4; list-style:none">ID: ${film.id}</li>
         <li>Title: ${film.title}</li>
         <li>Description: ${film.description}</li>
         <li>Release Year: ${film.releaseYear}</li>
@@ -77,7 +80,7 @@
 
 <br><br><br><br>
 
-<a href="index.html">Return Home</a>
+<a style= "color: yellow; text-decoration:none" href="index.html">Return Home</a>
 
 
 
