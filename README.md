@@ -44,3 +44,5 @@
 
 
 ## Lessons Learned
+
+We learned how important productive communication is for a project like this. With multiple people working on the same project, things can get broken really quickly if the team members aren't communicating properly. We had multiple instances of merge conflicts that had to be resolved. 

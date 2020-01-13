@@ -21,6 +21,7 @@ h1 {
 #id:hover{
 	opacity: 0.4;
 	text-decoration: underline;
+	text-decoration-style: dotted;
 }
 
 #key {
@@ -33,6 +34,7 @@ h1 {
 #key:hover{
 	opacity: 0.4;
 	text-decoration: underline;
+	text-decoration-style: wavy;
 }
 #add {
 	color: white;
@@ -44,6 +46,7 @@ h1 {
 #add:hover{
 	opacity: 0.4;
 	text-decoration: underline;
+	text-decoration-style: dashed;
 }
 
 #addform {
