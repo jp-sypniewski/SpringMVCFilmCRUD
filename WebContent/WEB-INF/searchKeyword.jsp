@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" type="css" href="mvcfilmsite.css" />
+<link rel="stylesheet" href="mvcfilmsite.css">
 <meta charset="UTF-8">
 <title>Film Search Results</title>
 </head>
