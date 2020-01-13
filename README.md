@@ -1,4 +1,6 @@
 ## Spring MVC Film C.R.U.D. Project
+###Skyler Sapp & JP Sypniewski
+
 ## Week 8 Project for Skill Distillery
 ![Alt Text](https://media.licdn.com/dms/image/C510BAQGcpYt2uJmayQ/company-logo_200_200/0?e=2159024400&v=beta&t=8O5Shdlep30sQ_juAPhlhUJi1jz-wl7FrJom6oG4cnw)
 
@@ -45,4 +47,4 @@
 
 ## Lessons Learned
 
-We learned how important productive communication is for a project like this. With multiple people working on the same project, things can get broken really quickly if the team members aren't communicating properly. We had multiple instances of merge conflicts that had to be resolved. 
+We learned how important productive communication is for a project like this. With multiple people working on the same project, things can get broken really quickly if the team members aren't communicating properly. We had multiple instances of merge conflicts that had to be resolved.
