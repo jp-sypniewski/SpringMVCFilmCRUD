@@ -4,7 +4,7 @@
 
 ## Overview
 
-  * Your application will implement full web-based C.R.U.D. functionality, using Spring MVC and the DAO pattern. The DAO implementation will use JDBC to persist and retrieve data.
+  * Your application will implement full web-based C.R.U.D. functionality (Create, Read, Update, Delete), using Spring MVC and the DAO pattern. The DAO implementation will use JDBC to persist and retrieve data.
 
 ## Structure
 
@@ -27,17 +27,17 @@
 
 ## Technologies Used
 ![Alt Text](http://www.pngall.com/wp-content/uploads/2016/05/Java-PNG-180x180.png)
-  ![Alt Text](https://itemis.ch/wp-content/uploads/sites/23/2015/06/eclipse5-180x180.jpg)
-  ![Alt Text](https://media.trustradius.com/product-logos/GV/6S/3COGMZ775P74-180x180.PNG)
-  ![Alt Text](https://media.trustradius.com/product-logos/HK/19/A1STBOL3HJCR-180x180.JPEG)
+![Alt Text](https://itemis.ch/wp-content/uploads/sites/23/2015/06/eclipse5-180x180.jpg)
+![Alt Text](https://media.trustradius.com/product-logos/GV/6S/3COGMZ775P74-180x180.PNG)
+![Alt Text](https://media.trustradius.com/product-logos/HK/19/A1STBOL3HJCR-180x180.JPEG)
 <br>
 ![Alt Text](http://ifixit.ie/wp-content/uploads/2015/02/Apple-logo-180x180.png)
-  ![Alt Text](http://web.corballis.ie/technology_logos/mysql-logo-180x180.png)
-  ![Alt Text](https://careers.google.com/jobs/dist/img/meta/careers_apple-touch-icon-180x180.a4632facecb104f3a686.png)
-  ![Alt Text](http://www.pngall.com/wp-content/uploads/2016/04/Github-Free-PNG-Image.png)
+![Alt Text](http://web.corballis.ie/technology_logos/mysql-logo-180x180.png)
+![Alt Text](https://careers.google.com/jobs/dist/img/meta/careers_apple-touch-icon-180x180.a4632facecb104f3a686.png)
+![Alt Text](http://www.pngall.com/wp-content/uploads/2016/04/Github-Free-PNG-Image.png)
 <br>
 ![Alt Text](https://really-simple-ssl.com/wp-content/uploads/2017/07/icon-mamppro.png)
-  ![Alt Text](https://secure.meetupstatic.com/photos/event/c/0/a/e/600_460069326.jpeg)
+![Alt Text](https://secure.meetupstatic.com/photos/event/c/0/a/e/600_460069326.jpeg)
 
 ## Challenges
 * It was tough to get this whole thing done without being physically in the same place. We have done most of our work so far either by ourselves or in a pair-programming setting. This being the first project where we are collaborating remotely presented a fair amount of challenges, namely trying to balance who is working on what and when. We had multiple times of finding ourselves with merge conflicts that we had to resolve before continuing. While this obviously wasn't impossible, it did slow us down at times.
